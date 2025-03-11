@@ -1,0 +1,96 @@
+.header-container{
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background: linear-gradient(180deg, rgba(0,0,0,0.7) 10%,transparent);
+    z-index: 1;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.header-left img{
+    width: 100px;
+    transform: translateY(-5px);
+    margin-right: 15px;
+}
+.header-left ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.header-left ul li{
+    cursor: pointer;
+}
+.header-right .icons{
+    width: 18px;
+    cursor: pointer;
+}
+.header-right .profile{
+    width: 30px;
+    border-radius: 4px;
+}
+.net-logo{
+    height: 40px;
+}
+.header-profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.header-right .dropdown{
+    position: absolute;
+    top: 74%;
+    right: 79px;
+    background: #191919;
+    width: max-content;
+    padding: 18px 22px;
+    border-radius: 4px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+.header-profile:hover .dropdown{
+    display: block;
+}
+.header-right .dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+}
+.nav-dark{
+    background: rgba(0,0,0,0.9);
+}
+
+@media (max-width:800px) {
+    .header-container{
+        padding: 20px 4%;
+    }
+    .header-left ul{
+        display: none;
+    }
+    .net-logo{
+        height: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .net-logo{
+        height: 20px;
+    }
+    .header-left{
+        gap: 10px;
+    }
+}
