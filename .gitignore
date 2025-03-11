@@ -1,7 +1,7 @@
 # Logs
 *.env
 .env
-firebase.js
+
 .prettierrc
 logs
 *.log
