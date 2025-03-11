@@ -26,9 +26,6 @@ function App(){
     })
   },[])
 
-
- 
-
   return (
     <>
     <ToastContainer theme='dark' />
@@ -44,3 +41,5 @@ function App(){
 }
 
 export default App
+
+// The code Written By Mulugeta Tesfaye 
